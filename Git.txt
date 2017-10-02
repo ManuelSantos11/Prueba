@@ -3,15 +3,6 @@ Manuel Santos@CuateSantos MINGW64 ~
 $ cd desktop
 
 Manuel Santos@CuateSantos MINGW64 ~/desktop
-$ git mkdir
-git: 'mkdir' is not a git command. See 'git --help'.
-
-Manuel Santos@CuateSantos MINGW64 ~/desktop
-$ mkdir
-mkdir: missing operand
-Try 'mkdir --help' for more information.
-
-Manuel Santos@CuateSantos MINGW64 ~/desktop
 $ mkdir Prueba
 
 Manuel Santos@CuateSantos MINGW64 ~/desktop
