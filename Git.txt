@@ -1,0 +1,89 @@
+
+Manuel Santos@CuateSantos MINGW64 ~
+$ cd desktop
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop
+$ git mkdir
+git: 'mkdir' is not a git command. See 'git --help'.
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop
+$ mkdir Prueba
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop
+$ cd Prueba
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba
+$ ls
+PDI.txt
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba
+$ git init
+Initialized empty Git repository in C:/Users/EDGAR AUSTRIA/Desktop/Prueba/.git/
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git config --global user.email "cuatote11@gmail.com"
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git config --global user.name "ManuelSantos11"
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git add .
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git commit -m "vamos wey"
+[master (root-commit) 188cb64] vamos wey
+ 1 file changed, 38 insertions(+)
+ create mode 100644 PDI.txt
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git remote add origin https://github.com/ManuelSantos11/Prueba.git
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git remote -v
+origin  https://github.com/ManuelSantos11/Prueba.git (fetch)
+origin  https://github.com/ManuelSantos11/Prueba.git (push)
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git push --set-upstream origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 851 bytes | 425.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ManuelSantos11/Prueba.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git add .
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git push
+Everything up-to-date
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git add .
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git commit -m "Nuevo"
+[master b9555d0] Nuevo
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 142.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ManuelSantos11/Prueba.git
+   188cb64..b9555d0  master -> master
+
+Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
+$ 
