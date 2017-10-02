@@ -1,6 +1,6 @@
 
 Manuel Santos@CuateSantos MINGW64 ~
-$ cd desktop
+$ cd Desktop
 
 Manuel Santos@CuateSantos MINGW64 ~/desktop
 $ mkdir Prueba
