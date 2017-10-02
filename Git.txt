@@ -50,12 +50,8 @@ To https://github.com/ManuelSantos11/Prueba.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
 
-Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
-$ git add .
-
-Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
-$ git push
-Everything up-to-date
+// Modificas manualmente el archivo en tu compu, en mi caso PDI.txt y 
+//guardo los cambios y continuo en Git para que se refleje los cambios.
 
 Manuel Santos@CuateSantos MINGW64 ~/desktop/Prueba (master)
 $ git add .
