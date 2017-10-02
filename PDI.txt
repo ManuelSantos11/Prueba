@@ -1,0 +1,38 @@
+In this video, we learn how to filter out various objects based on color. As shown in the video, direct threshold on the color won't give us perfect values. So what we have to do is that apply a set of morphological operations after basic thresholding.
+
+Code:
+a = imread('input.jpg');
+imshow(a);
+red = a(:,:,1); green = a(:,:,2); blue = a(:,:,3);
+imshow(red)
+imshow(green)
+imshow(blue)
+d = impixel(a);
+out = red (g) 180 & green (g) 150 & green (l) 254 & blue (l) 10;*
+*(I've used (g), (l) instead of the greater than and less than symbols as they are not allowed in the description on YouTube videos)
+
+imshow(out)
+out2 = imfill(out,'holes');
+imshow(out2)
+out3 = bwmorph(out2,'erode');
+imshow(out3)
+imshow(out2)
+out3 = bwmorph(out2,'dilate',1);
+imshow(out3)
+out4 = imfill(out3,'holes');
+imshow(out4)
+stats = regionprops(out4)
+imshow(out4)
+doc regionprops
+
+https://www.youtube.com/watch?v=oqmxaZYLIkg
+
+https://www.youtube.com/watch?v=QJPu7R1K3CU
+
+https://es.mathworks.com/videos/computer-vision-with-matlab-for-object-detection-and-tracking-82036.html?elqsid=1498339569497&potential_use=Education
+
+https://www.youtube.com/watch?v=hYcugbbf9ug
+
+https://es.mathworks.com/help/images/functionlist.html
+
+https://www.youtube.com/watch?v=kMK8DjdGtZo
