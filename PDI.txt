@@ -11,7 +11,7 @@ d = impixel(a);
 out = red (g) 180 & green (g) 150 & green (l) 254 & blue (l) 10;*
 *(I've used (g), (l) instead of the greater than and less than symbols as they are not allowed in the description on YouTube videos)
 
-imshow(out)
+/*imshow(out)
 out2 = imfill(out,'holes');
 imshow(out2)
 out3 = bwmorph(out2,'erode');
@@ -22,7 +22,8 @@ imshow(out3)
 out4 = imfill(out3,'holes');
 imshow(out4)
 stats = regionprops(out4)
-imshow(out4)
+imshow(out4) */
+
 doc regionprops
 
 https://www.youtube.com/watch?v=oqmxaZYLIkg
