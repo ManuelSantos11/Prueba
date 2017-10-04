@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.serializejson.js"></script>
+		<title>App Web</title>
+	</head>
+	<body>
+		<H1>CREATE AN ACCOUNT</H1>
+		<div>
+			<form id="myform" action="" method="post">
+				Su Nommbre<br>
+				<input type="text" name="nombre" required="true" placeholder=""><br>
+				Su Telefono<br>
+				<input type="tel" name="telefono" required="true" placeholder=""><br>
+				Su correo<br>
+				<input type="email" name="correo" required="true" placeholder=""><br>
+				Contraseña<br>
+				<input type="password" name="contraseña" required="true" placeholder=""><br>
+				<br>
+				<input type="checkbox" name="cheq" required="Acepto que me roben mis datos">Aceptar terminos<br>
+				<button id="boton" onclick="serializar()">Click</button>
+			</form>
+			
+			<script>
+				function serializar()
+				{
+				
+						var text ="";
+						
+						if($('#cheq').is(':checked')) {
+						
+						
+							text=$('#myform').serializejson();
+							if (text.nombre == "" || text.telefono == "" || text.correo == "" || text.contraseña == "")
+							{
+								alert("Por favor, llene los campos obligatoriamente");
+							}
+						else
+						{
+						
+							console.log(text);
+							alert(text.nombre+"\n"+text.telefono+"\n"+text.correo+"\n"+text.contraseña);
+							
+						}
+						}else{
+						alert("Por favor, acepte los terminos");
+						}
+					
+				}
+			</script>
+		</div>
+	</body>
+</html>	
+	
+					
