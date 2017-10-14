@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+        .alert {
+            padding: 20 px;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 20px;
+        }
+        .alert.success{background-color: red }
+        .alert.info{background-color: blue}
+        .alert.warning{background-color: green}
+        </style>
+    <title>Mi Funcion</title>
+    </head>
+    <body>
+            <button onclick="miFuncion()">Bucle 1</button><br>
+            <button onclick="bucles()">Bucle ++</button><br>
+            <button onclick="bucles1()">Bucle --</button><br>
+            <button onclick="bucles2()">Bucle de +2</button><br>
+            <button onclick="buclesWhile()">Bucle While ++</button><br>
+            <button onclick="buclesWhile1()">Bucle While --</button><br>
+            <button onclick="buclesDoWhile()">Bucle Do While</button><br>
+            <button onclick="operacionesAritmeticas()">Aritmetica</button><br>
+            <button onclick="operacionesLogicas()">Operaciones Logicas</button><br>
+            <button onclick="manejarArreglos()">Arreglos</button><br>
+            <button onclick="misAlerts()">Alerts</button><br>
+            <button onclick="manejarObjetos()">Objetos</button><br>
+            <button onclick="Carros()">Carro</button><br>
+
+            <div class="alert success">
+                <strong>Success! </strong> --success--
+                <span class="closebtn">&times;</span>
+            </div>
+            <div class="alert info">
+                <strong>Info! </strong>--Info--
+                <span class="closebtn">&times;</span>
+            </div>
+            <div class="alert warning">
+                <strong>Warning! </strong>--warning!--
+                <span class="closebtn">&times;</span>
+            </div>
+        <!--Haciendo referencia a mi archivo JS-->
+        <script  src="js/demo01.js"></script>
+        <script type="text/javascript">
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        // Ciclo for para trabajar sobre el elemento al que se le dio click
+        for (i=0; i<close.length; i++){
+            //Al elemento se le da un evento
+            close[i].onclick = function(){
+                //Obtener el elemento padre
+                var div = this.parentElement;
+                //Efecto de desaparecer o cambiar
+                div.style.opacity = "0";
+                //Controlar la opacidad
+                serTimeout(function(){div.style.display = "none";}, 600);
+            }
+        }
+        </script>
+
+    </body>
+</html>
+  
+        
+
+        
+    

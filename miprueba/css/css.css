@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+.menu{
+    background-color: #25267E;
+    
+}
+
+.logo{
+    color: #FFFFFF;
+    font-weight: bold; 
+}
+
+.logo2{
+    color: #7c7c7c;
+}
+
+.logo3{
+    color: #1f62ae;
+    font-weight: bold;
+}
+
+.logo4{
+    background-color: #539f44;
+    
+}
+.logo4 .a{
+    color: white;   
+}
+
+.logo4 .h2{
+    color: white;   
+}
+
+#yo{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    padding:8px;
+}
+
+h5 {
+    color: white;
+}
+
+a {
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+ }
+
+#call-to-action {
+    background-color: #539F44;
+    color: white;
+   height: 350px;
+    letter-spacing: 2px;
+}
+
+#call-to-action .button-container {
+  color: white;
+  position: absolute;
+  width: 135%;
+}
+
+#call-to-action a {
+  margin: 5% 5% 0% 5%;
+  display: inline-block;
+}
+
+#call-to-action a p {
+  color: white;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.button-border {
+    border: 13px solid rgba(255,255,255,0.5);
+    border-radius: 94px;
+    height: 188px;
+  }
+
+
+  #button-portfolio, #button-blog, #button-about-me {
+    width: 188px;
+    height: 188px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
